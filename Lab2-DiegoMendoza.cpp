@@ -22,11 +22,12 @@ void cubos(int n ){
 		int suma=0;
 		for(int k = 1 ;cont<=4;k+=2){
 			if(i<=cont){
+				cout<<k<<"+";
 				suma +=k;
 				i++;
 			}else{
-				cout<<suma<<"\n";
-				i=1;
+				cout<<"+"<<k<<"="<<suma<<"\n";
+				i=2;
 				cont++;
 				suma=0;
 				suma+=k;
