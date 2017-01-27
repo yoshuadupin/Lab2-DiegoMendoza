@@ -1,18 +1,39 @@
 #include<iostream>
+#include<cmath>
 using namespace std;
 
 void  ordenarArreglo(int );
-
+void cubos(int);
 
 
 int main(){
 	int n; 
 	 cout<<"Ingrese el tamano:";
 	cin>>n; 
-    ordenarArreglo( n); 
+   // ordenarArreglo( n);
+	cubos(n); 
 }
 
 
+void cubos(int n ){
+	
+		int cont=1;
+		int i = 1;
+		int suma=0;
+		for(int k = 1 ;cont<=4;k+=2){
+			if(i<=cont){
+				suma +=k;
+				i++;
+			}else{
+				cout<<suma<<"\n";
+				i=1;
+				cont++;
+				suma=0;
+				suma+=k;
+			}				
+		}
+	}
+//Primer Ejercicio
 void ordenarArreglo( int n){
 	int arreglo[n]; 
 
